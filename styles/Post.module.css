@@ -1,0 +1,46 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    background-color: white;
+}
+
+.post:hover{
+    transform: scale(1.01);
+}
+
+.post-footer{
+    display: flex;
+}
+
+.description{
+    margin-bottom: 10px;
+}
+.upvote-btn{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.user-voted{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upvotes{
+    display: flex;
+    gap: 5px;
+}
+
+.upvotes-icons{
+    display: flex;
+    gap: 5px;
+}
