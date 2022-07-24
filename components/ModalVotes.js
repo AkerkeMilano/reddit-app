@@ -16,7 +16,6 @@ const ModalVotes = ({children, post}) => {
   const handleClose = () => {
     setOpen(false);
   };
-  console.log(post); 
   return (
     <div>
     <Button variant="outlined" onClick={handleClickOpen}>
