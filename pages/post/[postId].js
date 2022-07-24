@@ -1,13 +1,21 @@
 import { useRouter } from "next/router";
-import { useQuery, gql } from "@apollo/client";
+import { gql } from "@apollo/client";
 import client from "../../apollo-client";
+import styles from "../../styles/PostDetails.module.css";
 
 const PostDetail = ({posts}) => {
     const router = useRouter();
     const postId = router.query.postId;
     const post = posts.filter(post => post.id === postId)[0];
   return (
-      <h1>{post.description}</h1>
+    <div className={styles.postdetails}>
+      <p>{`Posted by ${post.postedBy.name}`}</p>
+      <h2>{post.description}</h2>
+      <div>
+        <a href={post.url} target="_blanket">{post.url}</a>
+      </div>
+
+    </div>
   );
 };
 

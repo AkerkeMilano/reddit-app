@@ -1,0 +1,9 @@
+.layout-header{
+    height: 70px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

@@ -1,0 +1,14 @@
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.login-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
