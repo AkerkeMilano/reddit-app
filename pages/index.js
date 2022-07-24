@@ -2,10 +2,10 @@ import styles from "../styles/Home.module.css";
 import { gql } from "@apollo/client";
 import Post from "../components/Post";
 import client from "../apollo-client";
-
+import Login from "../components/Login";
+import CreateNewPost from "./creation";
 
 const Home = ({ posts }) => {
-
   return (
     <div className={styles.container}>
       <div className={styles["posts-list"]}>

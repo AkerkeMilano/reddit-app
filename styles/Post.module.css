@@ -1,22 +1,29 @@
 .post{
     display: flex;
-    flex-direction: column;
-    padding: 10px;
     border-radius: 5px;
     width: 40vw;
     background-color: white;
 }
 
 .post:hover{
-    transform: scale(1.01);
-}
-
-.post-footer{
-    display: flex;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .description{
     margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.block-btn{
+    background-color: rgb(220,220,220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .upvote-btn{
     text-decoration: none;
